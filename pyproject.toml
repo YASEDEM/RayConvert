@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rayconvert"
+version = "0.3.0"
+description = "Local Windows file converter with a Python desktop UI"
+authors = [{name = "YASEDEM"}]
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license-files = ["LICENSE", "NOTICE"]
+keywords = ["converter", "image", "video", "audio", "pdf", "docx"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Win32 (MS Windows)",
+  "Intended Audience :: End Users/Desktop",
+  "Operating System :: Microsoft :: Windows",
+  "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+  "Pillow==13.0.0",
+  "PyMuPDF==1.26.5",
+  "python-docx==1.2.0",
+  "reportlab==4.4.9",
+  "imageio-ffmpeg==0.6.0",
+]
+
+[project.gui-scripts]
+rayconvert = "rayconvert:main"
+
+[tool.setuptools]
+py-modules = ["rayconvert"]
+
+
+
+

@@ -1,0 +1,6 @@
+Pillow==13.0.0
+PyMuPDF==1.26.5
+python-docx==1.2.0
+reportlab==4.4.9
+imageio-ffmpeg==0.6.0
+
